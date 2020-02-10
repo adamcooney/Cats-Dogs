@@ -16,7 +16,7 @@ public class Cat extends Animal
 		this.numLives = numLives;
 	}
 	
-	public void getNumLives()
+	public int getNumLives()
 	{
 			return  numLives;
 	}

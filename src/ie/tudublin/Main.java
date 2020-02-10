@@ -19,7 +19,27 @@ public class Main
 		//dynamic binding
 		mino.speak();
 		
-		System.out.println(mino.getNumLives());
+		//this wont compile
+		//System.out.println(mino.getNumLives());
+		
+		//this is an example of a cast
+		System.out.println(((Cat)mino).getNumLives());
+		
+		mino = new Dog("Misty"); //this will compile
+		//topcat = new Dog("Tara"); //this wont compile
+		
+		Animal a = new Cat("a");
+		Animal b = new Cat("b");
+		
+		System.out.println(a);
+		System.out.println(b);
+		
+		a = b;
+		
+		a.setName("c");
+		
+		System.out.println(a);
+		System.out.println(b);
 	}
 }
 
