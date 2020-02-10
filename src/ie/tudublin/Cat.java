@@ -11,14 +11,14 @@ public class Cat extends Animal
 		setNumLives(9);
 	}
 	
-	public void setNumLives()
+	public void setNumLives(int numLives)
 	{
-		
+		this.numLives = numLives;
 	}
 	
 	public void getNumLives()
 	{
-		
+			return  numLives;
 	}
 	
 	public void speak()
